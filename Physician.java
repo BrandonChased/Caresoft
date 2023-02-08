@@ -35,6 +35,7 @@ public class Physician extends User implements HIPAACompliantUser {
     @Override
     public boolean accessAuthorized(Integer confirmedAuthID) {
         // TODO Auto-generated method stub
+        System.out.println(this.getId());
         if( confirmedAuthID == this.getId()) {
             return true;
         }

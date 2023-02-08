@@ -43,6 +43,7 @@ public class AdminUser extends User implements HIPAACompliantAdmin, HIPAAComplia
 
     @Override
     public boolean accessAuthorized(Integer confirmedAuthID) {
+        System.out.println(this.getId());
         if( confirmedAuthID == this.getId()) {
             return true;
         }else {
